@@ -1,0 +1,4 @@
+[submodule "custom_nix_pkgs/openocd"]
+	path = custom_nix_pkgs/openocd
+	url = https://github.com/analogdevicesinc/openocd
+	branch = release
