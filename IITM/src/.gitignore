@@ -1,0 +1,16 @@
+.vscode
+**/.cache
+msdk
+**/__pycache__
+**/build
+**/.clangd
+**/compile_commands.json
+secure_design/ports.mk
+secure_design/ectf_tools/*
+secure_design/application_processor/inc/ectf_params.h
+secure_design/component/inc/ectf_params.h
+ports.mk
+deployment/global_secrets.h
+**/ectf_params.h
+**/ectf_params_encrypted.h
+Makefile

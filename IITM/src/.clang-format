@@ -1,0 +1,11 @@
+﻿---
+IndentWidth: '4'
+UseTab: Never
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+
+...
