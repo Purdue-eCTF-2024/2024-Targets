@@ -1,0 +1,1 @@
+unsigned int get_random_trng(void);
