@@ -1,0 +1,46 @@
+ready file /home/csslab/ectf/2024-ectf-insecure-example/application_processor/wolfssl/wolfssl_resume_ready17850
+-r          Resume session
+
+Starting example server for resume test...
+
+
+Resume test supported
+./examples/server/server -r -R "/home/csslab/ectf/2024-ectf-insecure-example/application_processor/wolfssl/wolfssl_resume_ready17850" -p 0
+waiting for ready file...
+found ready file, starting client...
+./examples/client/client  -r -p 36001
+SSL version is TLSv1.2
+SSL cipher suite is TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+SSL curve name is SECP256R1
+Client message: hello wolfssl!
+SSL version is TLSv1.2
+SSL cipher suite is TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+SSL reused session
+Client message: resuming wolfssl!
+removing existing ready file
+resumed session
+
+Repeating resume test without extended master secret...
+
+Starting example server for resume test...
+
+
+Resume test supported
+./examples/server/server -r -R "/home/csslab/ectf/2024-ectf-insecure-example/application_processor/wolfssl/wolfssl_resume_ready17850" -p 36001
+waiting for ready file...
+found ready file, starting client...
+./examples/client/client -n -r -p 36001
+SSL version is TLSv1.2
+SSL cipher suite is TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+SSL curve name is SECP256R1
+Client message: hello wolfssl!
+SSL version is TLSv1.2
+SSL cipher suite is TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+SSL reused session
+Client message: resuming wolfssl!
+removing existing ready file
+resumed session
+
+Success!
+
+PASS scripts/resume.test (exit status: 0)
