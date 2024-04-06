@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+            "intelliSenseMode": "linux-gcc-arm",
+            "compileCommands": "${workspaceFolder}/compile_commands.json",
+            "compilerArgs": [
+                "-Wall",
+                "-Werror"
+            ],
+            "cStandard": "c23",
+            "cppStandard": "c++20"
+        }
+    ],
+    "version": 4
+}
