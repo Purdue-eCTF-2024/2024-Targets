@@ -1,0 +1,8 @@
+#ifndef __ECTF_PARAMS__
+#define __ECTF_PARAMS__
+#define COMPONENT_ID 286331174
+#define COMPONENT_BOOT_MSG "Component boot 3"
+#define ATTESTATION_LOC "TWZ7tVyJlnMPBhoQs0O5RA=="
+#define ATTESTATION_DATE "XxeMlBxGLvyHRVWOaWt+Dg=="
+#define ATTESTATION_CUSTOMER "CPbGzF3nV6pObS8dBOu0PQ=="
+#endif
