@@ -1,0 +1,192 @@
+src/libwolfssl_la-ocsp.lo: src/ocsp.c .build_params config.h \
+ wolfssl/wolfcrypt/settings.h wolfssl/wolfcrypt/visibility.h \
+ wolfssl/error-ssl.h wolfssl/wolfcrypt/error-crypt.h \
+ wolfssl/wolfcrypt/types.h wolfssl/wolfcrypt/wc_port.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/time.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/_ansi.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/newlib.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/_newlib_version.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/config.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/ieeefp.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/features.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/cdefs.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/_default_types.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include/stddef.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/reent.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/_ansi.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_types.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/_types.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/lock.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/time.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/types.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_stdint.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/endian.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/_endian.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/select.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_sigset.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_timeval.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/timespec.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_timespec.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_pthreadtypes.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/sched.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/types.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_locale.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/time.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/_time.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include/stdint.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/stdint.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_intsup.h \
+ wolfssl/wolfcrypt/memory.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/stdlib.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/stdlib.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/alloca.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/string.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/strings.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/string.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/stdio.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include/stdarg.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/stdio.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/ctype.h \
+ wolfssl/ocsp.h wolfssl/ssl.h wolfssl/version.h \
+ wolfssl/wolfcrypt/asn_public.h wolfssl/wolfcrypt/dsa.h \
+ wolfssl/wolfcrypt/random.h wolfssl/wolfcrypt/sha256.h \
+ wolfssl/wolfcrypt/logging.h wolfssl/openssl/compat_types.h \
+ wolfssl/wolfcrypt/hmac.h wolfssl/wolfcrypt/hash.h \
+ wolfssl/wolfcrypt/md5.h wolfssl/wolfcrypt/sha.h \
+ wolfssl/wolfcrypt/sha512.h wolfssl/callbacks.h wolfssl/openssl/bn.h \
+ wolfssl/wolfcrypt/wolfmath.h wolfssl/wolfcrypt/tfm.h \
+ /nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include-fixed/limits.h \
+ wolfssl/openssl/rsa.h wolfssl/openssl/err.h wolfssl/openssl/hmac.h \
+ wolfssl/openssl/opensslv.h wolfssl/wolfio.h wolfssl/wolfcrypt/asn.h \
+ wolfssl/wolfcrypt/dh.h wolfssl/wolfcrypt/kdf.h wolfssl/openssl/asn1.h \
+ wolfssl/openssl/ssl.h wolfssl/openssl/tls1.h wolfssl/openssl/evp.h \
+ wolfssl/openssl/md5.h wolfssl/openssl/sha.h wolfssl/openssl/sha3.h \
+ wolfssl/openssl/ripemd.h wolfssl/openssl/dsa.h wolfssl/openssl/ec.h \
+ wolfssl/wolfcrypt/ecc.h wolfssl/openssl/dh.h wolfssl/wolfcrypt/aes.h \
+ wolfssl/wolfcrypt/des3.h wolfssl/wolfcrypt/arc4.h \
+ wolfssl/wolfcrypt/chacha20_poly1305.h wolfssl/wolfcrypt/chacha.h \
+ wolfssl/wolfcrypt/poly1305.h wolfssl/wolfcrypt/pwdbased.h \
+ wolfssl/wolfcrypt/coding.h wolfssl/openssl/objects.h \
+ wolfssl/openssl/bio.h wolfssl/openssl/crypto.h wolfssl/openssl/conf.h \
+ wolfssl/openssl/x509.h wolfssl/openssl/ecdsa.h wolfssl/openssl/pkcs7.h \
+ wolfssl/wolfcrypt/pkcs7.h wolfssl/openssl/pem.h wolfssl/openssl/stack.h \
+ wolfssl/internal.h wolfssl/wolfcrypt/pkcs12.h wolfssl/wolfcrypt/rsa.h \
+ wolfssl/wolfcrypt/wc_encrypt.h wolfssl/wolfcrypt/hpke.h \
+ wolfcrypt/src/misc.c wolfssl/wolfcrypt/misc.h
+.build_params:
+config.h:
+wolfssl/wolfcrypt/settings.h:
+wolfssl/wolfcrypt/visibility.h:
+wolfssl/error-ssl.h:
+wolfssl/wolfcrypt/error-crypt.h:
+wolfssl/wolfcrypt/types.h:
+wolfssl/wolfcrypt/wc_port.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/time.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/_ansi.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/newlib.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/_newlib_version.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/config.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/ieeefp.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/features.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/cdefs.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/_default_types.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include/stddef.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/reent.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/_ansi.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_types.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/_types.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/lock.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/time.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/types.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_stdint.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/endian.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/_endian.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/select.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_sigset.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_timeval.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/timespec.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_timespec.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_pthreadtypes.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/sched.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/types.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_locale.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/time.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/_time.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include/stdint.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/stdint.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/_intsup.h:
+wolfssl/wolfcrypt/memory.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/stdlib.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/machine/stdlib.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/alloca.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/string.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/strings.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/string.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/stdio.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include/stdarg.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/sys/stdio.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/arm-none-eabi/include/ctype.h:
+wolfssl/ocsp.h:
+wolfssl/ssl.h:
+wolfssl/version.h:
+wolfssl/wolfcrypt/asn_public.h:
+wolfssl/wolfcrypt/dsa.h:
+wolfssl/wolfcrypt/random.h:
+wolfssl/wolfcrypt/sha256.h:
+wolfssl/wolfcrypt/logging.h:
+wolfssl/openssl/compat_types.h:
+wolfssl/wolfcrypt/hmac.h:
+wolfssl/wolfcrypt/hash.h:
+wolfssl/wolfcrypt/md5.h:
+wolfssl/wolfcrypt/sha.h:
+wolfssl/wolfcrypt/sha512.h:
+wolfssl/callbacks.h:
+wolfssl/openssl/bn.h:
+wolfssl/wolfcrypt/wolfmath.h:
+wolfssl/wolfcrypt/tfm.h:
+/nix/store/zc8z3q9ypr4mclddid5rkc1a1m33mvjs-gcc-arm-embedded-12.3.rel1/lib/gcc/arm-none-eabi/12.3.1/include-fixed/limits.h:
+wolfssl/openssl/rsa.h:
+wolfssl/openssl/err.h:
+wolfssl/openssl/hmac.h:
+wolfssl/openssl/opensslv.h:
+wolfssl/wolfio.h:
+wolfssl/wolfcrypt/asn.h:
+wolfssl/wolfcrypt/dh.h:
+wolfssl/wolfcrypt/kdf.h:
+wolfssl/openssl/asn1.h:
+wolfssl/openssl/ssl.h:
+wolfssl/openssl/tls1.h:
+wolfssl/openssl/evp.h:
+wolfssl/openssl/md5.h:
+wolfssl/openssl/sha.h:
+wolfssl/openssl/sha3.h:
+wolfssl/openssl/ripemd.h:
+wolfssl/openssl/dsa.h:
+wolfssl/openssl/ec.h:
+wolfssl/wolfcrypt/ecc.h:
+wolfssl/openssl/dh.h:
+wolfssl/wolfcrypt/aes.h:
+wolfssl/wolfcrypt/des3.h:
+wolfssl/wolfcrypt/arc4.h:
+wolfssl/wolfcrypt/chacha20_poly1305.h:
+wolfssl/wolfcrypt/chacha.h:
+wolfssl/wolfcrypt/poly1305.h:
+wolfssl/wolfcrypt/pwdbased.h:
+wolfssl/wolfcrypt/coding.h:
+wolfssl/openssl/objects.h:
+wolfssl/openssl/bio.h:
+wolfssl/openssl/crypto.h:
+wolfssl/openssl/conf.h:
+wolfssl/openssl/x509.h:
+wolfssl/openssl/ecdsa.h:
+wolfssl/openssl/pkcs7.h:
+wolfssl/wolfcrypt/pkcs7.h:
+wolfssl/openssl/pem.h:
+wolfssl/openssl/stack.h:
+wolfssl/internal.h:
+wolfssl/wolfcrypt/pkcs12.h:
+wolfssl/wolfcrypt/rsa.h:
+wolfssl/wolfcrypt/wc_encrypt.h:
+wolfssl/wolfcrypt/hpke.h:
+wolfcrypt/src/misc.c:
+wolfssl/wolfcrypt/misc.h:
